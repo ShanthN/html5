@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-5</title>
+    <style>
+        dialog{
+            background-color: gray;
+            color: lightgray;
+            padding: 20px;
+            border: 2px solid #000;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h3>DETAILS TAG</h3>
+        <p>This tag is used to specify the additional details on the web page that the user can view or hide on demand.</p>
+    </center>
+    <hr>
+
+    <center>
+        <h3>This is SUMMARY TAg</h3>
+        <p>The <b>HTML SUMMARY</b> tag is used with <b>DETAILS</b> tag. It is used as a summary, caption or legend for the content of a details element</p>
+    </center>
+    <hr>
+
+    <details>
+        <summary>HTML</summary>
+        <h1>HTML</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium debitis recusandae ut sint, facere eveniet officia vel veritatis sequi deserunt reprehenderit est aspernatur, ullam impedit rerum aperiam tempore eligendi magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora commodi ad iste exercitationem sequi explicabo est odit nobis quis cumque. Doloribus dignissimos voluptatem sunt tenetur rerum maxime eveniet id commodi!</p>
+    </details>
+    <details>
+        <summary>CSS</summary>
+        <h1>CSS</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium debitis recusandae ut sint, facere eveniet officia vel veritatis sequi deserunt reprehenderit est aspernatur, ullam impedit rerum aperiam tempore eligendi magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora commodi ad iste exercitationem sequi explicabo est odit nobis quis cumque. Doloribus dignissimos voluptatem sunt tenetur rerum maxime eveniet id commodi!</p>
+    </details>
+    <details>
+        <summary>JS</summary>
+        <h1>JS</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium debitis recusandae ut sint, facere eveniet officia vel veritatis sequi deserunt reprehenderit est aspernatur, ullam impedit rerum aperiam tempore eligendi magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora commodi ad iste exercitationem sequi explicabo est odit nobis quis cumque. Doloribus dignissimos voluptatem sunt tenetur rerum maxime eveniet id commodi!</p>
+    </details>
+
+    <center>
+        <h3>TIME TAG..!</h3>
+        <p> <b>HTML TAG</b> tag is used to define date and time. It displays time value in a 24 hour clock or a precise date in a Gregorian calendar in HTML.</p>
+    </center>
+    <hr>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis corrupti soluta quam. Consequatur aperiam harum sint sequi at rerum saepe id earum, nihil possimus deleniti a esse adipisci laudantium. Repudiandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus modi nemo dicta deleniti rerum minus iusto quis totam commodi eveniet rem sapiente, iste placeat. Quasi similique quibusdam asperiores deserunt necessitatibus?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde porro saepe repudiandae totam, aspernatur ipsam nesciunt laudantium corporis architecto ipsum minima eligendi voluptatum corrupti est? Quo eveniet possimus culpa nulla. <time>2:30</time> PM Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt pariatur cum aliquam aliquid animi eius iste nam ullam recusandae id commodi, iure fuga perferendis nihil corporis placeat omnis accusantium quam!</p>
+
+    <hr>
+
+    <center>
+        <h3>This is a DIALOG TAG</h3>
+        <p><b>( This tag to create a new popup dialog on a web page. )</b></p>
+    </center>
+    <hr>
+
+    <dialog id="dd">
+        <button type="button" id="btn2">&times;</button>
+        <h1>FULLSTACK</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, sapiente cumque labore debitis porro cum quasi mollitia ipsam tempore nemo consequuntur excepturi esse velit et atque rem laboriosam, veniam exercitationem? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore facilis tempore quam praesentium eum. Repudiandae natus, culpa distinctio ex saepe perspiciatis recusandae sint eaque ducimus, laboriosam at quaerat voluptate illo.</p>
+    </dialog>
+
+    <button id="btn1">open Dialog</button>
+
+    <script>
+        document.getElementById("btn1").onclick = function(){
+            document.getElementById("dd").show();
+        };
+        document.getElementById("btn2").onclick = function(){
+            document.getElementById("dd").close();
+        };
+    </script>
+</body>
+</html>
